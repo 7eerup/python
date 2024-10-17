@@ -33,3 +33,8 @@ Package Version
 ------- -------
 pip     24.2
 ```
+
+## Package 라이브러리 설치
+```bash
+pip install openpyxl==3.1.2 requests==2.31.0 selenium==4.12.0 webdriver_manager==4.0.0
+```
