@@ -7,6 +7,10 @@ posts = [] # db를 대체합니다.
 def home():
     return render_template('index.html')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
 @app.route('/post')
 def post():
     return render_template('post.html')
