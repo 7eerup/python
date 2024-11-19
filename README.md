@@ -5,12 +5,12 @@
 $ python -m venv .venv
 ```
 
-### virtualenv 적용
+### 가상 환경 활성화
 ```bash
 $ source .venv/bin/activate
 ```
 
-### virtualenv 해제
+### 가상 환경 비활성화
 ```bash
 $ deactivate
 ```
@@ -22,9 +22,24 @@ $ pip install --upgrade pip
 ```
 **[notice] Successfully installed pip-24.2**
 
-### Package 확인
+### 설치 PKG 목록 확인
 ```bash
 $ pip list
+```
+
+### PKG 설치
+```zsh
+$ pip install pkg_name
+```
+
+### requirements.txt 생성 (패키지 비전 포함)
+```zsh
+$ pip freeze > requirements.txt
+```
+
+### 다른 환경에서 동일 PKG 설치
+```zsh
+$ pip install -r requirements.txt
 ```
 
 ### Package Version Lists
@@ -36,5 +51,5 @@ pip     24.2
 
 ### Package 라이브러리 설치
 ```bash
-pip install openpyxl==3.1.2 requests==2.31.0 selenium==4.12.0 webdriver_manager==4.0.0
+$ pip install openpyxl==3.1.2 requests==2.31.0 selenium==4.12.0 webdriver_manager==4.0.0
 ```
